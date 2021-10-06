@@ -1,21 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import Drawer from "./navigation/Drawer";
+import CustumDrawer from "./navigation/CustumDrawer";
+
+import { createStore, applyMiddleware } from "redux";
+import { Provider } from "react-redux";
+import thunk from "redux-thunk";
+import rootReducer from "./stores/rootReducer";
+import AuthNavigation from "./navigation/AuthNavigation";
+
+const store = createStore(rootReducer, applyMiddleware(thunk));
 
 export default function App() {
+  const [isLoged, setIsLoged] = useState(false);
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Provider store={store}>
+      <NavigationContainer>
+        {isLoged ? <CustumDrawer /> : <AuthNavigation />}
+      </NavigationContainer>
+    </Provider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
