@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 import { COLORS, FONTS, SIZES } from '../constants';
 
-const CustomSwitch = ({ onChange, value }) => {
+const CustomSwitch = ({ label = "", onChange, value }) => {
     return (
         <TouchableWithoutFeedback
             onPress={() => onChange(!value)}
@@ -26,15 +26,17 @@ const CustomSwitch = ({ onChange, value }) => {
                     />
                 </View>
 
-                <Text
-                    style={{
-                        color: value ? COLORS.primary : COLORS.gray,
-                        marginLeft: SIZES.base,
-                        ...FONTS.body4
-                    }}
-                >
-                    Save Me
-                </Text>
+                {label !== "" &&
+                    <Text
+                        style={{
+                            color: value ? COLORS.primary : COLORS.gray,
+                            marginLeft: SIZES.base,
+                            ...FONTS.body4
+                        }}
+                    >
+                        {label}
+                    </Text>
+                }
             </View>
         </TouchableWithoutFeedback>
     )

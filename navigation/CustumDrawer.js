@@ -105,7 +105,7 @@ const CustomDrawerContent = ({ navigation, selectedTab, setSelectedTab }) => {
                         marginTop: SIZES.radius,
                         alignItems: 'center'
                     }}
-                    onPress={() => console.log("Profile")}
+                    onPress={() => navigation.navigate('MyAccount')}
                 >
                     <Image
                         source={dummyData.myProfile?.profile_image}

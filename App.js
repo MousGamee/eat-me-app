@@ -12,7 +12,7 @@ import AuthNavigation from "./navigation/AuthNavigation";
 const store = createStore(rootReducer, applyMiddleware(thunk));
 
 export default function App() {
-  const [isLoged, setIsLoged] = useState(false);
+  const [isLoged, setIsLoged] = useState(true);
   return (
     <Provider store={store}>
       <NavigationContainer>

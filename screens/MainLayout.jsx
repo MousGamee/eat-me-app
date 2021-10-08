@@ -92,13 +92,9 @@ const MainLayout = ({
   selectedTab,
   setSelectedTab,
 }) => {
-  
-
   useEffect(() => {
     setSelectedTab(constants.screens.home);
   }, []);
-
-  
 
   return (
     <Animated.View
@@ -109,50 +105,7 @@ const MainLayout = ({
       }}
     >
       {/* Header */}
-      <Header
-        containerStyle={{
-          height: 50,
-          paddingHorizontal: SIZES.padding,
-          marginTop: 40,
-          alignItems: "center",
-        }}
-        title={selectedTab.toUpperCase()}
-        leftComponent={
-          <TouchableOpacity
-            style={{
-              width: 40,
-              height: 40,
-              alignItems: "center",
-              justifyContent: "center",
-              borderWidth: 1,
-              borderColor: COLORS.gray2,
-              borderRadius: SIZES.radius,
-            }}
-            onPress={() => navigation.openDrawer()}
-          >
-            <Image source={icons.menu} />
-          </TouchableOpacity>
-        }
-        rightComponent={
-          <TouchableOpacity
-            style={{
-              alignItems: "center",
-
-              borderRadius: SIZES.radius,
-            }}
-            onPress={() => console.log('go to profile')}
-          >
-            <Image
-              style={{
-                width: 40,
-                height: 40,
-                borderRadius: SIZES.radius,
-              }}
-              source={dummyData?.myProfile?.profile_image}
-            />
-          </TouchableOpacity>
-        }
-      />
+      
       {/* Content */}
       <View style={{ flex: 1 }}>
           <MainNavigation />
