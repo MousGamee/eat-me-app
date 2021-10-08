@@ -14,6 +14,10 @@ import DeliveryStatus from "../screens/DeliveryStatus";
 import Map from "../screens/Map";
 import MyAccount from "../screens/MyAccount";
 import MyAccountEdit from "../screens/MyAccountEdit";
+import Settings from "../screens/Settings";
+import ChangePassword from "../screens/ChangePassword";
+import NotificationSetting from "../screens/NotificationSetting";
+import Favourite from "../screens/Favourite";
 
 const Screens = createStackNavigator();
 
@@ -27,7 +31,11 @@ const MainNavigation = ({ navigation }) => {
       initialRouteName="Home"
     >
       <Screens.Screen name="Home" component={Home} />
-      <Screens.Screen name="Notification" component={Notification} />
+      <Screens.Screen
+        name="Notification"
+        component={Notification}
+        options={{ gestureEnabled: false }}
+      />
       <Screens.Screen name="FoodDetail" component={FoodDetail} />
       <Screens.Screen name="MyCart" component={MyCart} />
       <Screens.Screen name="MyCard" component={MyCard} />
@@ -46,6 +54,10 @@ const MainNavigation = ({ navigation }) => {
       <Screens.Screen name="Map" component={Map} />
       <Screens.Screen name="MyAccount" component={MyAccount} />
       <Screens.Screen name="MyAccountEdit" component={MyAccountEdit} />
+      <Screens.Screen name="Settings" component={Settings} />
+      <Screens.Screen name="ChangePassword" component={ChangePassword} />
+      <Screens.Screen name="NotificationSetting" component={NotificationSetting} />
+      <Screens.Screen name="Favourite" component={Favourite} />
     </Screens.Navigator>
   );
 };

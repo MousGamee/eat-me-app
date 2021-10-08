@@ -164,7 +164,7 @@ const CustomDrawerContent = ({ navigation, selectedTab, setSelectedTab }) => {
                         isFocused={selectedTab == constants.screens.favourite}
                         onPress={() => {
                             setSelectedTab(constants.screens.favourite)
-                            navigation.navigate("MainLayout")
+                            navigation.navigate("Favourite")
                         }}
                     />
 
@@ -195,6 +195,10 @@ const CustomDrawerContent = ({ navigation, selectedTab, setSelectedTab }) => {
                     <CustomDrawerItem
                         label="Settings"
                         icon={icons.setting}
+                        onPress={() => {
+                            navigation.closeDrawer()
+                            navigation.navigate('Settings')
+                        }}
                     />
 
                     <CustomDrawerItem

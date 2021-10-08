@@ -4,6 +4,7 @@ const { width, height } = Dimensions.get("window");
 export const COLORS = {
     primary: "#FF6C44", //orange
     transparentPrimary: 'rgba(227, 120, 75, 0.4)',
+    transparentPrimary9: 'rgba(255, 238, 233, 0.9)',
     orange: "#FFA133",
     lightOrange: "#FFA133",
     lightOrange2: "#FDDED4",
@@ -54,6 +55,7 @@ export const SIZES = {
     width,
     height
 };
+
 export const FONTS = {
     largeTitle: { fontWeight: "bold", fontSize: SIZES.largeTitle },
     h1: { fontWeight: "bold", fontSize: SIZES.h1, lineHeight: 36 },

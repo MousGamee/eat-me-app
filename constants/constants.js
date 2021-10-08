@@ -156,7 +156,81 @@ const track_order_status = [
     }
 ]
 
-const GOOGLE_MAP_API_KEY = "[YOUR_API_KEY]"
+const tips = [
+    {
+        id: 1,
+        label: "No Tips",
+        value: 0
+    },
+    {
+        id: 2,
+        label: "$5",
+        value: 5
+    },
+    {
+        id: 3,
+        label: "$10",
+        value: 10
+    },
+    {
+        id: 4,
+        label: "$15",
+        value: 15
+    },
+    {
+        id: 5,
+        label: "$20",
+        value: 20
+    }
+]
+
+const gender = [
+    {
+        id: 0,
+        label: "Male",
+        value: "Male"
+    },
+    {
+        id: 1,
+        label: "Female",
+        value: "Female"
+    },
+]
+
+const state = [
+    {
+        id: 0,
+        label: "Sarawak",
+        value: "Sarawak"
+    },
+    {
+        id: 1,
+        label: "Sabah",
+        value: "Sabah"
+    },
+    {
+        id: 2,
+        label: "Johor",
+        value: "Johor"
+    },
+    {
+        id: 3,
+        label: "Kedah",
+        value: "Kedah"
+    },
+    {
+        id: 4,
+        label: "Kelantan",
+        value: "Kelantan"
+    },
+    {
+        id: 5,
+        label: "Penang",
+        value: "Penang"
+    },
+]
+
+const GOOGLE_MAP_API_KEY = "[Your Google API Key]"
 
 export default {
     onboarding_screens,
@@ -166,5 +240,8 @@ export default {
     ratings,
     tags,
     track_order_status,
+    tips,
+    gender,
+    state,
     GOOGLE_MAP_API_KEY,
 }

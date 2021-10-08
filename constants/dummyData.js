@@ -217,6 +217,222 @@ const fromLocs = [
     }
 ]
 
+const kfc = require("../assets/dummyData/kfc.png")
+const pizzaHut = require("../assets/dummyData/pizza_hut.png")
+const mcDonald = require("../assets/dummyData/mcdonald.png")
+const burgerKing = require("../assets/dummyData/burger_king.png")
+const domino = require("../assets/dummyData/domino_pizza.png")
+const starbucks = require("../assets/dummyData/starbucks.png")
+const veg_biryani = require("../assets/dummyData/veg_biryani.png")
+const wrap_sandwich = require("../assets/dummyData/wrap_sandwich.png")
+
+const orderHistories = [
+    {
+        title: "19 Sep 2021",
+        data: [
+            {
+                id: 18888,
+                name: "Pizza Hut",
+                image: pizzaHut,
+                price: 35.30,
+                status: "D",
+                status_desc: "Order Delivered",
+                itemCount: 3,
+                deliveredTime: "19 Sep, 14:30"
+            },
+            {
+                id: 28888,
+                name: "KFC",
+                image: kfc,
+                price: 55.00,
+                status: "D",
+                status_desc: "Order Delivered",
+                itemCount: 4,
+                deliveredTime: "19 Sep, 12:30"
+            },
+            {
+                id: 38888,
+                name: "Domino's Pizza",
+                image: domino,
+                price: 15.50,
+                status: "C",
+                status_desc: "Order Cancel",
+                itemCount: 1,
+                deliveredTime: "19 Sep, 10:30"
+            },
+        ]
+    },
+    {
+        title: "15 Sep 2021",
+        data: [
+            {
+                id: 48888,
+                name: "Starbucks",
+                image: starbucks,
+                price: 40.00,
+                status: "D",
+                status_desc: "Order Delivered",
+                itemCount: 4,
+                deliveredTime: "15 Sep, 10:00"
+            }
+        ]
+    }
+]
+
+const upcomingOrders = [
+    {
+        title: "",
+        data: [
+            {
+                id: 88888,
+                name: "Starbucks",
+                image: starbucks,
+                price: 10.00,
+                status: "O",
+                status_desc: "Food on the way",
+                itemCount: 4,
+                deliveredTime: "27 Sep, 10:00"
+            },
+            {
+                id: 98888,
+                name: "McDonald",
+                image: mcDonald,
+                price: 20.00,
+                status: "O",
+                status_desc: "Food on the way",
+                itemCount: 4,
+                deliveredTime: "27 Sep, 10:00"
+            },
+        ]
+    },
+    {
+        title: "Latest Orders",
+        data: [
+            {
+                id: 68888,
+                name: "Starbucks",
+                image: starbucks,
+                price: 10.00,
+                status: "D",
+                status_desc: "Order Delivered",
+                itemCount: 4,
+                deliveredTime: "27 Sep, 10:00"
+            },
+            {
+                id: 78888,
+                name: "Burger King",
+                image: burgerKing,
+                price: 12.00,
+                status: "D",
+                status_desc: "Order Delivered",
+                itemCount: 4,
+                deliveredTime: "27 Sep, 8:00"
+            }
+        ]
+    }
+]
+
+const availableCoupons = [
+    {
+        id: 1,
+        name: "Burger King",
+        image: burgerKing,
+        description: 'Valid until 01 Jan 2022',
+        discountPercent: 20,
+    },
+    {
+        id: 2,
+        name: "KFC",
+        image: kfc,
+        description: 'Valid until 01 Jan 2022',
+        discountPercent: 10,
+    },
+    {
+        id: 3,
+        name: "Pizza Hut",
+        image: pizzaHut,
+        description: 'Valid until 01 Feb 2022',
+        discountPercent: 35,
+    },
+    {
+        id: 4,
+        name: "Starbucks",
+        image: starbucks,
+        description: 'Valid until 01 Feb 2022',
+        discountPercent: 15,
+    },
+    {
+        id: 5,
+        name: "Domino's Pizza",
+        image: domino,
+        description: 'Valid until 01 Feb 2022',
+        discountPercent: 30,
+    },
+]
+
+const usedCoupons = [
+    {
+        id: 1,
+        name: "Burger King",
+        image: burgerKing,
+        description: 'Used on 2 Sep 2021',
+        discountPercent: 20,
+    },
+    {
+        id: 2,
+        name: "Starbucks",
+        image: starbucks,
+        description: 'Used on 18 Sep 2021',
+        discountPercent: 15,
+    },
+]
+
+const notifications = [
+    {
+        title: "Today",
+        data: [
+            {
+                id: 1,
+                image: domino,
+                title: "Domino's - Buy 1 get 1 free",
+                desc: "Buy 1 get 1 free for small sizes until Nov 30, 2021",
+                duration: "a few seconds ago"
+            },
+            {
+                id: 2,
+                image: veg_biryani,
+                title: "Veg Biryani - 35% sale today",
+                desc: "Buy 1 get 1 free for small sizes until Nov 30, 2021",
+                duration: "5 mins ago"
+            },
+        ]
+    },
+    {
+        title: "Yesterday",
+        data: [
+            {
+                id: 3,
+                image: domino,
+                title: "Domino's - Buy 1 get 1 free",
+                desc: "Buy 1 get 1 free for small sizes until Nov 30, 2021",
+                duration: "1 day ago"
+            },
+            {
+                id: 4,
+                image: veg_biryani,
+                title: "Veg Biryani - 35% sale today",
+                desc: "Buy 1 get 1 free for small sizes until Nov 30, 2021",
+                duration: "1 day ago"
+            }
+        ]
+    }
+]
+
+const deliveryMan = {
+    name: "Williams Adam",
+    avatar: require("../assets/dummyData/delivery_man.png")
+}
+
 export default {
     myProfile,
     categories,
@@ -226,4 +442,10 @@ export default {
     myCards,
     allCards,
     fromLocs,
+    orderHistories,
+    upcomingOrders,
+    availableCoupons,
+    usedCoupons,
+    notifications,
+    deliveryMan,
 }

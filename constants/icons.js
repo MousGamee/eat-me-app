@@ -1,5 +1,7 @@
 const apple = require("../assets/icons/apple.png")
 const back = require("../assets/icons/back.png")
+const bar = require("../assets/icons/bar.png")
+const calender = require("../assets/icons/calender.png")
 const coupon = require("../assets/icons/coupon.png")
 const cross = require("../assets/icons/cross.png")
 const cancel = require("../assets/icons/cancel.png")
@@ -12,6 +14,7 @@ const discount = require("../assets/icons/discount.png")
 const dollar = require("../assets/icons/dollar.png")
 const dotted_line = require("../assets/icons/dotted_line.png")
 const menu = require("../assets/icons/menu.png")
+const menu1 = require("../assets/icons/menu1.png")
 const minus = require("../assets/icons/minus.png")
 const search = require("../assets/icons/search.png")
 const filter = require("../assets/icons/filter.png")
@@ -35,11 +38,15 @@ const location = require("../assets/icons/location.png")
 const location1 = require("../assets/icons/location1.png")
 const logout = require("../assets/icons/logout.png")
 const notification = require("../assets/icons/notification.png")
+const password = require("../assets/icons/password.png")
 const paypal = require("../assets/icons/paypal.png")
 const plus = require("../assets/icons/plus.png")
+const privacy = require("../assets/icons/privacy.png")
 const profile = require("../assets/icons/profile.png")
 const setting = require("../assets/icons/setting.png")
 const star = require("../assets/icons/star.png")
+const term = require("../assets/icons/term.png")
+const update = require("../assets/icons/update.png")
 const visa = require("../assets/icons/visa.png")
 const wallet = require("../assets/icons/wallet.png")
 const help = require("../assets/icons/help.png")
@@ -53,6 +60,8 @@ const navigator1 = require("../assets/icons/navigator1.png")
 export default {
     apple,
     back,
+    bar,
+    calender,
     coupon,
     cross,
     cancel,
@@ -65,6 +74,7 @@ export default {
     dollar,
     dotted_line,
     menu,
+    menu1,
     minus,
     search,
     filter,
@@ -88,11 +98,15 @@ export default {
     location1,
     logout,
     notification,
+    password,
     paypal,
     plus,
+    privacy,
     profile,
     setting,
     star,
+    term,
+    update,
     visa,
     wallet,
     help,
