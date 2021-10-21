@@ -1,7 +1,9 @@
+import AuthLayout from './AuthLayout'
 import CardItem from "./CardItem"
 import CartQuantityButton from "./CartQuantityButton"
 import CouponCard from "./CouponCard"
 import CustomSwitch from "./CustomSwitch"
+import FilterModal  from "./FilterModal";
 import FooterTotal from "./FooterTotal"
 import FormDateInput from "./FormDateInput"
 import FormInput from "./FormInput"
@@ -27,10 +29,12 @@ import TwoPointSlider from "./TwoPointSlider"
 import VerticalFoodCard from "./VerticalFoodCard"
 
 export {
+    AuthLayout,
     CardItem,
     CartQuantityButton,
     CouponCard,
     CustomSwitch,
+    FilterModal,
     FooterTotal,
     FormDateInput,
     FormInput,

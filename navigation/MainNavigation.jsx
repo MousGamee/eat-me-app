@@ -18,6 +18,9 @@ import Settings from "../screens/Settings";
 import ChangePassword from "../screens/ChangePassword";
 import NotificationSetting from "../screens/NotificationSetting";
 import Favourite from "../screens/Favourite";
+import Coupon from "../screens/Coupon";
+import Order from "../screens/Order";
+import Review from "../screens/Review";
 
 const Screens = createStackNavigator();
 
@@ -58,6 +61,9 @@ const MainNavigation = ({ navigation }) => {
       <Screens.Screen name="ChangePassword" component={ChangePassword} />
       <Screens.Screen name="NotificationSetting" component={NotificationSetting} />
       <Screens.Screen name="Favourite" component={Favourite} />
+      <Screens.Screen name="Coupon" component={Coupon} />
+      <Screens.Screen name="Order" component={Order} />
+      <Screens.Screen name="Review" component={Review} />
     </Screens.Navigator>
   );
 };

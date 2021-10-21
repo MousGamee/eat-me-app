@@ -12,6 +12,7 @@ const FoodDetail = ({ navigation, route }) => {
     React.useEffect(() => {
         let { foodItem } = route.params
         setFoodItem(foodItem)
+        console.log(foodItem)
     }, [])
 
 
@@ -24,7 +25,7 @@ const FoodDetail = ({ navigation, route }) => {
           marginTop: 40,
           alignItems: "center",
         }}
-        title={"Food details"}
+        title={foodItem.name}
         leftComponent={
           <IconButton
             icon={icons.back}

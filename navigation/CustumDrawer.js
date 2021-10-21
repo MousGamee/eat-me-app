@@ -178,18 +178,21 @@ const CustomDrawerContent = ({ navigation, selectedTab, setSelectedTab }) => {
                         }}
                     />
 
-                    <CustomDrawerItem
-                        label="Track Your Order"
+                     <CustomDrawerItem
+                        label="My Orders"
                         icon={icons.location}
                         onPress={() => {
                             navigation.closeDrawer()
-                            navigation.navigate("Map")
+                            navigation.navigate("Order")
                         }}
                     />
 
                     <CustomDrawerItem
                         label="Coupons"
                         icon={icons.coupon}
+                        onPress={() => {
+                            navigation.navigate("Coupon")
+                        }}
                     />
 
                     <CustomDrawerItem
