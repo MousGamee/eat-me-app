@@ -201,7 +201,7 @@ const SignIn = ({ navigation }) => {
                     labelStyle={{
                         marginLeft: SIZES.radius,
                     }}
-                    onPress={() => console.log('connection')}
+                    onPress={() => console.log(firebase)}
                 />
             </View>
         </AuthLayout>

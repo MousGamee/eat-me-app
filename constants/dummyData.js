@@ -1,7 +1,7 @@
 const myProfile = {
-    name: "ByProgrammers",
+    name: "MousGamee",
     profile_image: require("../assets/images/profile.png"),
-    address: "No. 88, Jln Padungan, Kuching"
+    address: "14 rue Thureau dangin, 75015 Paris"
 }
 
 const categories = [
